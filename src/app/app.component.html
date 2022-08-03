@@ -9,7 +9,7 @@
 </nav>
 
 <!-- Navbar Desktop -->
-<nav>
+<nav class="shadow">
   <ul
     class="justify-evenly text-center items-center mx-auto max-w-7xl py-6 px-7 bg-white hidden lg:flex"
   >
@@ -194,9 +194,12 @@
     Talent Spotlight
   </h2>
   <div
-    class="container text-center md:space-y-6 mt-10 max-w-lg md:max-w-2xl lg:max-w-5xl mx-auto pb-5"
+    class="container text-center md:space-y-6 mt-10 max-w-lg md:max-w-3xl lg:max-w-5xl mx-auto pb-5 relative"
   >
-    <div class="border rounded-3xl text-lg p-11 mt-5 md:max-w-lg">
+    <!-- Testimoni Box -->
+    <div
+      class="border rounded-3xl text-lg p-11 mt-5 md:max-w-lg md:hidden relative"
+    >
       <div class="space-y-5">
         <div class="flex">
           <img src="../assets/images/ava-1.webp" class="rounded-full" alt="" />
@@ -230,11 +233,49 @@
         </button>
       </div>
     </div>
+    <!-- Image asset -->
     <img
       src="../assets/images/asset-1.webp"
-      class="mx-auto rounded-3xl w-128 md:-mt-10 md:ml-10 md:hidden"
+      class="mx-auto rounded-3xl w-128 md:w-80 md:translate-y-32 lg:translate-y-16 md:-translate-x-10 md:absolute lg:w-96 lg:ml-7"
       alt=""
     />
+    <!-- Testimoni Box Desktop -->
+    <div
+      class="border rounded-3xl text-lg p-11 mt-5 md:max-w-lg lg:max-w-2xl hidden md:block ml-auto"
+    >
+      <div class="space-y-5">
+        <div class="flex">
+          <img src="../assets/images/ava-1.webp" class="rounded-full" alt="" />
+          <div>
+            <h4 class="text-neutral-600 text-base">UI Designer</h4>
+            <h3 class="font-semibold text-xl md:text-2xl ml-6 md:ml-11">
+              Naomi Park
+            </h3>
+          </div>
+        </div>
+        <p class="text-start leading-6">
+          Naomi has over eight years of experience in the design industry. She
+          has been crafting and delivering unique digital experiences for global
+          leading companies and startups. She is adept at user experience
+          designs, user interface designs, and innovations for web and mobile
+          applications. She helps to create engaging products for businesses
+          with a user-centered approach.
+        </p>
+        <div class="flex flex-wrap gap-1 text-lg">
+          <div class="bg-neutral-100 px-3 py-2 rounded-3xl">Mobile UI</div>
+          <div class="bg-neutral-100 px-3 py-2 rounded-3xl">Web UI</div>
+          <div class="bg-neutral-100 px-3 py-2 rounded-3xl">
+            Mobile App Design
+          </div>
+          <div class="bg-neutral-100 px-3 py-2 rounded-3xl">+ 8 more</div>
+        </div>
+        <button
+          class="bg-neutral-700 py-3 px-6 rounded-xl text-white font-semibold text-lg leading-5 hover:bg-neutral-800 md:-ml-64 lg:-ml-106"
+        >
+          Hire Designer
+        </button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -255,12 +296,15 @@
       <div
         class="flex md:flex-col md:items-center justify-center py-4 space-x-5 md:space-y-5"
       >
-        <div>
+        <div class="relative">
           <div
-            class="flex justify-center items-center rounded-full border w-10 h-10 text-center"
+            class="flex justify-center items-center rounded-full border-4 border-black w-12 h-12 text-center text-xl font-semibold outline-4"
           >
             1
           </div>
+          <div
+            class="w-0.5 h-20 bg-gray-300 ml-6 top-16 absolute md:ml-20 md:w-32 md:h-0.5 md:top-6 lg:w-56"
+          ></div>
         </div>
         <div class="md:text-center space-y-3 md:max-w-xs">
           <h3 class="font-semibold text-2xl md:text-3xl">
@@ -274,14 +318,17 @@
       </div>
       <!-- component 2 -->
       <div
-        class="flex md:flex-col md:items-center justify-center py-4 space-x-5 md:space-y-5"
+        class="flex md:flex-col md:items-center justify-center py-4 space-x-5 md:space-y-8"
       >
-        <div>
+        <div class="relative">
           <div
-            class="flex justify-center items-center rounded-full border w-10 h-10 text-center"
+            class="flex justify-center items-center rounded-full border-4 border-black w-12 h-12 text-center text-xl font-semibold"
           >
             2
           </div>
+          <div
+            class="w-0.5 h-16 bg-gray-300 absolute ml-6 top-14 md:ml-20 md:w-32 md:h-0.5 md:top-6 lg:w-56"
+          ></div>
         </div>
         <div class="md:text-center space-y-3 md:max-w-xs">
           <h3 class="font-semibold text-2xl md:text-3xl">
@@ -297,12 +344,14 @@
       <div
         class="flex md:flex-col md:items-center justify-center py-4 space-x-5 md:space-y-5"
       >
-        <div>
+        <div class="relative">
           <div
-            class="flex justify-center items-center rounded-full border w-10 h-10 text-center"
+            class="flex justify-center items-center rounded-full border-4 border-black w-12 h-12 text-center text-xl font-semibold"
           >
             3
           </div>
+
+          <div class="w-0.5 h-16 bg-gray-300 absolute ml-6 top-16 hidden"></div>
         </div>
         <div class="md:text-center space-y-3 md:max-w-xs">
           <h3 class="font-semibold text-2xl md:text-3xl">
@@ -437,25 +486,120 @@
   </div>
 </section>
 
-<footer class="bg-gray-100 md:grid">
+<footer class="bg-gray-100 p-4 md:grid">
   <div
-    class="container mx-auto max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-7xl py-10 grid grid-rows-7 gap-3"
+    class="my-5 justify-between gap-10 lg:container lg:mx-auto lg:flex lg:max-w-5xl xl:max-w-7xl"
+  >
+    <!-- Section footer 1 -->
+    <div
+      class="grid-rows-7 container mx-auto my-5 grid max-w-lg gap-3 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl"
+    >
+      <!-- Judul -->
+      <div>
+        <h3 class="font-semibold">Platform</h3>
+      </div>
+      <!-- Content -->
+      <div
+        class="grid grid-rows-5 gap-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-1 lg:grid-rows-5"
+      >
+        <div><a href="">Talent</a></div>
+        <div><a href="">Enterprise</a></div>
+        <div><a href=""></a> Payment & Fees</div>
+        <div><a href=""></a> Dispute Resolution</div>
+        <div><a href=""></a> FAQ</div>
+      </div>
+      <!-- Hr -->
+      <hr class="mt-5 lg:hidden" />
+    </div>
+
+    <!-- Section Footer 2 -->
+    <div
+      class="grid-rows-7 container mx-auto my-5 grid max-w-lg gap-3 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl"
+    >
+      <!-- judul -->
+      <div>
+        <h3 class="font-semibold">Resources</h3>
+      </div>
+      <!-- Content -->
+      <div
+        class="grid grid-rows-3 gap-3 md:grid-cols-3 md:grid-rows-1 lg:grid-cols-1 lg:grid-rows-3"
+      >
+        <div><a href="">For Freelancers</a></div>
+        <div><a href="">For Clients</a></div>
+        <div><a href=""> Blog </a></div>
+      </div>
+      <!-- Hr -->
+      <hr class="mt-5 lg:hidden" />
+    </div>
+
+    <!-- Section footer 3 -->
+    <div
+      class="grid-rows-7 container mx-auto my-5 grid max-w-lg gap-3 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl"
+    >
+      <!-- Judul -->
+      <div>
+        <h3 class="font-semibold">About</h3>
+      </div>
+      <!-- Content -->
+      <div
+        class="grid grid-rows-6 gap-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-1 lg:grid-rows-6"
+      >
+        <div><a href="">Mission</a></div>
+        <div><a href="">Community</a></div>
+        <div><a href="">WORKS Token</a></div>
+        <div><a href="">Whitepaper</a></div>
+        <div><a href=""> Network Statistics </a></div>
+        <div><a href="">Contact Us</a></div>
+      </div>
+      <!-- hr -->
+      <hr class="mt-5 lg:hidden" />
+    </div>
+
+    <!-- Logo Images -->
+    <div
+      class="container order-last mx-auto max-w-lg md:max-w-3xl lg:order-first lg:max-w-5xl xl:max-w-7xl"
+    >
+      <img
+        src="https://ik.imagekit.io/aazw3gxwf2n/prod/web/footer/works-tagline-logo.svg"
+        class="mx-auto w-44 pt-4 pr-4 md:w-64 lg:w-72"
+      />
+      <ul
+        class="my-5 mx-auto flex w-56 items-center justify-center gap-4 text-xl"
+      >
+        <li><i class="bx bxl-linkedin"></i></li>
+        <li><i class="bx bxl-instagram"></i></li>
+        <li><i class="bx bxl-facebook"></i></li>
+        <li><i class="bx bxl-twitter"></i></li>
+      </ul>
+      <hr class="mt-5 lg:hidden" />
+    </div>
+  </div>
+  <hr class="mt-5 hidden lg:block" />
+  <div
+    class="grid-rows-7 container mx-auto my-5 grid max-w-lg gap-3 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl"
   >
     <div>
-      <h3>Platform</h3>
+      <h3>© 2022 Work Labs Pte. Ltd.</h3>
     </div>
-    <div class="grid grid-rows-6 gap-3 md:grid-rows-2 md:grid-cols-3">
-      <div><a href="">Talent</a></div>
-      <div><a href="">Enterprise</a></div>
-      <div><a href=""></a> Payment & Fees</div>
-      <div><a href=""></a> Dispute Resolution</div>
-      <div><a href=""></a> FAQ</div>
+    <div class="flex flex-wrap gap-x-4 text-xs lg:justify-between lg:text-lg">
+      <div><a href="">Terms</a></div>
+      <div><a href="">Code of Conduct</a></div>
+      <div><a href="">Network Standards</a></div>
+      <div><a href="">Purchaser Terms</a></div>
+      <div><a href="">Referral Terms</a></div>
+      <div><a href="">Privacy Policy</a></div>
+      <div><a href="">Cookie Policy</a></div>
     </div>
-  </div>
-  <div>
-    <img
-      src="https://ik.imagekit.io/aazw3gxwf2n/prod/web/footer/works-tagline-logo.svg"
-      alt=""
-    />
+    <hr class="mt-5 lg:hidden" />
   </div>
 </footer>
+
+<!--
+  1. Footer pakai grid col 1 (mobile) grid col 4 (lg)
+  2. GAP untuk misahin antar colom (done)
+  3. translate untuk asset (done)
+  4. divider absolute
+  5. Swiper JS Navigation
+ -->
+
+<!-- Laporan magang + sidang magang + logbook magang(per minggu) -->

@@ -7,6 +7,8 @@ module.exports = {
         sans: ["Plus Jakarta Sans", "sans-serif"],
       },
       spacing: {
+        104: "24rem",
+        106: "26rem",
         120: "30rem",
         124: "31rem",
         128: "32rem",
