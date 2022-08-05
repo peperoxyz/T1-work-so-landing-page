@@ -217,33 +217,109 @@
     </p>
   </div>
   <div class="mx-auto block md:hidden md:pt-5">
-    <!-- <img src="../assets/images/slide-1.webp" class="mx-auto w-120" alt="" /> -->
-    <div class="group relative w-80 mx-auto">
-      <div class="opacity-1 absolute flex w-80">
-        <div class="absolute mt-8 ml-5 space-y-2 text-white">
-          <h1 class="text-2xl">UX Design</h1>
-          <p>
-            Top UX designers can shape a product from the business brief to
-            working prototypes
-          </p>
+    <!-- Try slider -->
+    <swiper [config]="config" class="mx-auto">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- First -->
+          <div class="mx-auto">
+            <div class="group relative w-80 mx-auto">
+              <div class="opacity-1 absolute flex w-80">
+                <div class="absolute mt-8 ml-5 space-y-2 text-white">
+                  <h1 class="text-2xl">UI Design</h1>
+                  <p>
+                    Ensure your product is not just functional but beautiful,
+                    bringing joy to users through screens
+                  </p>
+                </div>
+              </div>
+              <img
+                class="w-80 rounded-3xl object-cover"
+                src="../assets/images/asset-2.webp"
+              />
+              <div
+                class="absolute top-0 left-0 flex h-0 w-80 flex-col items-center justify-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:rounded-3xl group-hover:opacity-100"
+              >
+                <div class="absolute -mt-60 ml-5 space-y-2 text-white">
+                  <h1 class="text-2xl">UI Design</h1>
+                  <p>
+                    Ensure your product is not just functional but beautiful,
+                    bringing joy to users through screens
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second -->
+        <div class="swiper-slide">
+          <div class="mx-auto">
+            <div class="group relative w-80 mx-auto">
+              <div class="opacity-1 absolute flex w-80">
+                <div class="absolute mt-8 ml-5 space-y-2 text-white">
+                  <h1 class="text-2xl">UI Design</h1>
+                  <p>
+                    Ensure your product is not just functional but beautiful,
+                    bringing joy to users through screens
+                  </p>
+                </div>
+              </div>
+              <img
+                class="w-80 rounded-3xl object-cover"
+                src="../assets/images/asset-2.webp"
+              />
+              <div
+                class="absolute top-0 left-0 flex h-0 w-80 flex-col items-center justify-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:rounded-3xl group-hover:opacity-100"
+              >
+                <div class="absolute -mt-60 ml-5 space-y-2 text-white">
+                  <h1 class="text-2xl">UI Design</h1>
+                  <p>
+                    Ensure your product is not just functional but beautiful,
+                    bringing joy to users through screens
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mx-auto">
+            <div class="group relative w-80 mx-auto">
+              <div class="opacity-1 absolute flex w-80">
+                <div class="absolute mt-8 ml-5 space-y-2 text-white">
+                  <h1 class="text-2xl">UI Design</h1>
+                  <p>
+                    Ensure your product is not just functional but beautiful,
+                    bringing joy to users through screens
+                  </p>
+                </div>
+              </div>
+              <img
+                class="w-80 rounded-3xl object-cover"
+                src="../assets/images/asset-2.webp"
+              />
+              <div
+                class="absolute top-0 left-0 flex h-0 w-80 flex-col items-center justify-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:rounded-3xl group-hover:opacity-100"
+              >
+                <div class="absolute -mt-60 ml-5 space-y-2 text-white">
+                  <h1 class="text-2xl">UI Design</h1>
+                  <p>
+                    Ensure your product is not just functional but beautiful,
+                    bringing joy to users through screens
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <img
-        class="w-full rounded-3xl object-cover"
-        src="../assets/images/slide-1.webp"
-      />
-      <div
-        class="absolute top-0 left-0 flex h-0 w-80 flex-col items-center justify-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:rounded-3xl group-hover:opacity-100"
-      >
-        <div class="absolute -mt-60 ml-5 space-y-2 text-white">
-          <h1 class="text-2xl">UX Design</h1>
-          <p>
-            Top UX designers can shape a product from the business brief to
-            working prototypes
-          </p>
-        </div>
-      </div>
-    </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </swiper>
+    <!-- Stop try slider -->
   </div>
   <div
     class="mx-auto hidden md:flex md:max-w-2xl lg:max-w-5xl md:overflow-hidden md:pt-8"
