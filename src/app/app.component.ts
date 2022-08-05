@@ -9,15 +9,28 @@ import { SwiperOptions } from 'swiper';
 export class AppComponent {
   title = 'my-app';
 
+  config_testi: SwiperOptions = {
+    navigation: false,
+    spaceBetween: 10,
+    slidesPerView: 1,
+  };
+
   config: SwiperOptions = {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    navigation: true,
+    spaceBetween: 10,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    spaceBetween: 30,
   };
 }
