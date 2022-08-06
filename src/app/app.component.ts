@@ -16,7 +16,7 @@ export class AppComponent {
   };
 
   config: SwiperOptions = {
-    navigation: true,
+    navigation: false,
     spaceBetween: 10,
     breakpoints: {
       640: {

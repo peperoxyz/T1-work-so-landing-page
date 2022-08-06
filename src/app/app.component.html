@@ -1,6 +1,7 @@
 <!-- Navbar Mobile -->
-<header class="sticky top-0 z-50 drop-shadow-sm">
-  <nav class="">
+<header class="sticky top-0 z-50">
+  <!-- Navbar Mobile -->
+  <nav class="bg-white drop-shadow-sm">
     <div
       class="flex justify-between text-center items-center bg-white max-w-lg mx-auto p-7 lg:hidden md:max-w-3xl lg:max-w-6xl"
     >
@@ -10,7 +11,7 @@
   </nav>
 
   <!-- Navbar Desktop -->
-  <nav>
+  <nav class="bg-white drop-shadow-sm">
     <ul
       class="justify-evenly text-center items-center mx-auto max-w-7xl py-6 px-7 bg-white hidden lg:flex"
     >
@@ -25,63 +26,95 @@
       </li>
 
       <!-- HMM try -->
-      <li>
+      <li class="group">
         <button class="peer font-semibold flex items-center">
-          For Client <i class="bx bx-chevron-down text-2xl"></i>
+          For Client
+          <i class="bx bx-chevron-down text-2xl group-hover:rotate-180"></i>
         </button>
         <!-- the menu here -->
         <div
           class="hidden w-[375px] bg-white drop-shadow-lg hover:flex peer-hover:flex absolute"
         >
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> Why Works </a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> How it Works </a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#">Clients</a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            Why Works
+          </a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            How it Works
+          </a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#"
+            >Clients</a
+          >
         </div>
       </li>
 
       <!-- HMM try -->
-      <li>
+      <li class="group">
         <button class="peer font-semibold flex items-center">
-          Proffession <i class="bx bx-chevron-down text-2xl"></i>
+          Proffession
+          <i class="bx bx-chevron-down text-2xl group-hover:rotate-180"></i>
         </button>
         <!-- the menu here -->
         <div
           class="hidden w-[400px] bg-white drop-shadow-lg hover:flex peer-hover:flex absolute"
         >
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> Designer </a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> Developer</a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#">Product Manager</a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            Designer
+          </a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            Developer</a
+          >
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#"
+            >Product Manager</a
+          >
         </div>
       </li>
 
       <!-- HMM try -->
-      <li>
-        <button class="peer font-semibold flex items-center">
-          Community <i class="bx bx-chevron-down text-2xl"></i>
+      <li class="group">
+        <button
+          class="peer font-semibold flex items-center [&:nth-child(2)]:hover:rotate-180"
+        >
+          Community
+          <i class="bx bx-chevron-down text-2xl group-hover:rotate-180"></i>
         </button>
         <!-- the menu here -->
         <div
           class="hidden w-[375px] bg-white drop-shadow-lg hover:flex peer-hover:flex absolute"
         >
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> Why Works </a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> How it Works </a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#">Clients</a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            Why Works
+          </a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            How it Works
+          </a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#"
+            >Clients</a
+          >
         </div>
       </li>
 
       <!-- HMM try -->
-      <li>
+      <li class="group">
         <button class="peer font-semibold flex items-center">
-          About <i class="bx bx-chevron-down text-2xl"></i>
+          About
+          <i class="bx bx-chevron-down text-2xl group-hover:rotate-180"></i>
         </button>
         <!-- the menu here -->
         <div
           class="hidden w-[575px] bg-white drop-shadow-lg hover:flex peer-hover:flex absolute"
         >
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> Mission </a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> WORKS Token </a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#"> Whitepaper </a>
-          <a class="px-5 py-3 hover:bg-gray-200" href="#">Network Statistics</a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            Mission
+          </a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            WORKS Token
+          </a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#">
+            Whitepaper
+          </a>
+          <a class="px-5 py-3 hover:border-b-4 hover:border-b-black" href="#"
+            >Network Statistics</a
+          >
         </div>
       </li>
 
@@ -94,12 +127,12 @@
       <li>
         <div class="space-x-4">
           <button
-            class="bg-neutral-100 px-4 py-2 rounded-xl text-black font-semibold"
+            class="bg-neutral-100 px-4 py-2 rounded-lg text-black font-semibold focus:outline focus:outline-blue-600 hover:bg-neutral-200"
           >
             Apply to join
           </button>
           <button
-            class="bg-neutral-700 px-4 py-2 rounded-xl text-white font-semibold"
+            class="bg-neutral-700 px-4 py-2 rounded-lg text-white font-semibold hover:bg-black focus:outline focus:outline-blue-600"
           >
             Hire Talent
           </button>
@@ -110,6 +143,14 @@
 </header>
 
 <main>
+  <!-- chat button -->
+  <div
+    class="fixed z-50 right-3 bottom-3 drop-shadow-lg flex justify-center items-center"
+  >
+    <div class="h-14 w-14 rounded-full bg-black"></div>
+    <i class="bx bxs-chat text-white absolute text-3xl"></i>
+  </div>
+
   <!-- Hero Image Mobile -->
   <section class="max-w-lg mx-auto relative md:hidden">
     <img src="../assets/images/hero.webp" class="mx-auto mt-5" alt="" />
@@ -124,7 +165,7 @@
         leading firms for their most critical project.
       </p>
       <button
-        class="bg-neutral-700 py-3 px-6 mx-auto rounded-xl text-white font-semibold text-sm leading-5 hover:bg-neutral-800"
+        class="bg-neutral-700 py-3 px-6 mx-auto rounded-lg text-white font-semibold text-sm leading-5 hover:bg-black focus:outline focus:outline-blue-600"
       >
         Hire Designer
       </button>
@@ -153,7 +194,7 @@
         leading firms for their most critical project.
       </p>
       <button
-        class="bg-neutral-700 py-3 px-6 mx-auto rounded-xl text-white font-semibold"
+        class="bg-neutral-700 py-3 px-6 mx-auto rounded-lg text-white font-semibold hover:bg-black focus:outline focus:outline-blue-600"
       >
         Hire Designer
       </button>
@@ -242,7 +283,7 @@
             </div>
             <img
               class="w-80 rounded-3xl object-cover"
-              src="../assets/images/asset-2.webp"
+              src="../assets/images/slide-1.webp"
             />
             <div
               class="absolute top-0 left-0 flex h-0 w-80 flex-col items-center justify-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:rounded-3xl group-hover:opacity-100"
@@ -254,6 +295,9 @@
                   to working prototypes
                 </p>
               </div>
+              <div class="-ml-28 mt-80">
+                <p class="text-white text-xl">Hire UX Designers</p>
+              </div>
             </div>
           </div></ng-template
         >
@@ -272,7 +316,7 @@
               </div>
               <img
                 class="w-80 rounded-3xl object-cover"
-                src="../assets/images/asset-3.webp"
+                src="../assets/images/slide-2.webp"
               />
               <div
                 class="absolute top-0 left-0 flex h-0 w-80 flex-col items-center justify-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:rounded-3xl group-hover:opacity-100"
@@ -283,6 +327,9 @@
                     Ensure your product is not just functional but beautiful,
                     bringing joy to users through screens
                   </p>
+                </div>
+                <div class="-ml-28 mt-80">
+                  <p class="text-white text-xl">Hire UI Designers</p>
                 </div>
               </div>
             </div>
@@ -303,7 +350,7 @@
               </div>
               <img
                 class="w-80 rounded-3xl object-cover"
-                src="../assets/images/slide-1.webp"
+                src="../assets/images/slide-3.webp"
               />
               <div
                 class="absolute top-0 left-0 flex h-0 w-80 flex-col items-center justify-center bg-neutral-900 opacity-0 group-hover:h-full group-hover:rounded-3xl group-hover:opacity-100"
@@ -314,6 +361,9 @@
                     Our product designers deliver a seamless end to end product
                     experience with vision
                   </p>
+                </div>
+                <div class="-ml-14 mt-80">
+                  <p class="text-white text-xl">Hire Product Designers</p>
                 </div>
               </div>
             </div>
@@ -379,7 +429,7 @@
                 <div class="bg-neutral-100 px-3 py-2 rounded-3xl">+ 8 more</div>
               </div>
               <button
-                class="bg-neutral-700 py-3 px-6 rounded-xl text-white font-semibold text-lg leading-5 hover:bg-neutral-800 -ml-64"
+                class="bg-neutral-700 py-3 px-6 rounded-lg text-white font-semibold text-lg leading-5 hover:bg-black -ml-64 focus:outline focus:outline-blue-600"
               >
                 Hire Designer
               </button>
@@ -428,7 +478,7 @@
                 <div class="bg-neutral-100 px-3 py-2 rounded-3xl">+ 8 more</div>
               </div>
               <button
-                class="bg-neutral-700 py-3 px-6 rounded-xl text-white font-semibold text-lg leading-5 hover:bg-neutral-800 md:-ml-64 lg:-ml-106"
+                class="bg-neutral-700 py-3 px-6 rounded-lg text-white font-semibold text-lg leading-5 hover:bg-black md:-ml-64 lg:-ml-106 focus:outline focus:outline-blue-600"
               >
                 Hire Designer
               </button>
@@ -453,9 +503,7 @@
                 />
                 <div>
                   <h4 class="text-neutral-600 text-base">UX Strategist</h4>
-                  <h3 class="font-semibold text-xl md:text-2xl ml-6 md:ml-11">
-                    Jason Chan
-                  </h3>
+                  <h3 class="font-semibold text-xl ml-2">Jason Chan</h3>
                 </div>
               </div>
               <p class="text-start leading-6">
@@ -477,7 +525,7 @@
                 <div class="bg-neutral-100 px-3 py-2 rounded-3xl">+ 8 more</div>
               </div>
               <button
-                class="bg-neutral-700 py-3 px-6 rounded-xl text-white font-semibold text-lg leading-5 hover:bg-neutral-800 -ml-64"
+                class="bg-neutral-700 py-3 px-6 rounded-lg text-white font-semibold text-lg leading-5 hover:bg-black -ml-64 focus:outline focus:outline-blue-600"
               >
                 Hire Designer
               </button>
@@ -485,7 +533,7 @@
           </div>
           <!-- Image asset -->
           <img
-            src="../assets/images/asset-jason.webp"
+            src="../assets/images/asset-2.webp"
             class="mx-auto rounded-3xl w-128 md:w-80 md:translate-y-32 lg:translate-y-16 md:-translate-x-10 md:absolute lg:w-96 lg:ml-7"
             alt=""
           />
@@ -502,7 +550,7 @@
                 />
                 <div>
                   <h4 class="text-neutral-600 text-base">UX Strategist</h4>
-                  <h3 class="font-semibold text-xl md:text-2xl ml-6 md:ml-11">
+                  <h3 class="font-semibold text-xl md:text-2xl md:ml-6">
                     Jason Park
                   </h3>
                 </div>
@@ -517,16 +565,18 @@
               </p>
               <div class="flex flex-wrap gap-1 text-lg">
                 <div class="bg-neutral-100 px-3 py-2 rounded-3xl">
-                  Mobile UI
+                  User Experience (UX)
                 </div>
-                <div class="bg-neutral-100 px-3 py-2 rounded-3xl">Web UI</div>
+                <div class="bg-neutral-100 px-3 py-2 rounded-3xl">
+                  Web App Design
+                </div>
                 <div class="bg-neutral-100 px-3 py-2 rounded-3xl">
                   Mobile App Design
                 </div>
                 <div class="bg-neutral-100 px-3 py-2 rounded-3xl">+ 8 more</div>
               </div>
               <button
-                class="bg-neutral-700 py-3 px-6 rounded-xl text-white font-semibold text-lg leading-5 hover:bg-neutral-800 md:-ml-64 lg:-ml-106"
+                class="bg-neutral-700 py-3 px-6 rounded-lg text-white font-semibold text-lg leading-5 hover:bg-black md:-ml-64 lg:-ml-106 focus:outline focus:outline-blue-600"
               >
                 Hire Designer
               </button>
@@ -708,7 +758,7 @@
     </div>
   </section>
 
-  <!-- Top designers section  -->
+  <!-- Hire designers section  -->
   <section class="bg-gray-100 py-32">
     <div
       class="container mx-auto max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-7xl space-y-5"
@@ -724,7 +774,7 @@
         unparalleled success.
       </p>
       <button
-        class="flex bg-neutral-700 py-3 px-6 rounded-xl text-white font-semibold text-lg leading-5 hover:bg-neutral-800 mx-auto"
+        class="flex bg-neutral-700 py-3 px-6 rounded-lg text-white font-semibold text-lg leading-5 hover:bg-black mx-auto focus:outline focus:outline-blue-600"
       >
         Hire Designer
       </button>
@@ -832,11 +882,23 @@
       <div
         class="grid grid-rows-5 gap-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-1 lg:grid-rows-6"
       >
-        <div><a href="">Talent</a></div>
-        <div><a href="">Enterprise</a></div>
-        <div><a href=""></a> Payment & Fees</div>
-        <div><a href=""></a> Dispute Resolution</div>
-        <div><a href=""></a> FAQ</div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">Talent</a>
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">Enterprise</a>
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href=""
+            >Payment & Fees</a
+          >
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href=""
+            >Dispute Resolution</a
+          >
+        </div>
+        <div><a class="hover:border-b hover:border-black" href="">FAQ</a></div>
       </div>
       <!-- Hr -->
       <hr class="mt-5 lg:hidden" />
@@ -854,9 +916,17 @@
       <div
         class="grid grid-rows-3 gap-3 md:grid-cols-3 md:grid-rows-1 lg:grid-cols-1 lg:grid-rows-6"
       >
-        <div><a href="">For Freelancers</a></div>
-        <div><a href="">For Clients</a></div>
-        <div><a href=""> Blog </a></div>
+        <div>
+          <a class="hover:border-b hover:border-black" href=""
+            >For Freelancers</a
+          >
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">For Clients</a>
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href=""> Blog </a>
+        </div>
       </div>
       <!-- Hr -->
       <hr class="mt-5 lg:hidden" />
@@ -874,12 +944,26 @@
       <div
         class="grid grid-rows-6 gap-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-1 lg:grid-rows-6"
       >
-        <div><a href="">Mission</a></div>
-        <div><a href="">Community</a></div>
-        <div><a href="">WORKS Token</a></div>
-        <div><a href="">Whitepaper</a></div>
-        <div><a href=""> Network Statistics </a></div>
-        <div><a href="">Contact Us</a></div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">Mission</a>
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">Community</a>
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">WORKS Token</a>
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">Whitepaper</a>
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">
+            Network Statistics
+          </a>
+        </div>
+        <div>
+          <a class="hover:border-b hover:border-black" href="">Contact Us</a>
+        </div>
       </div>
       <!-- hr -->
       <hr class="mt-5 lg:hidden" />
@@ -894,7 +978,7 @@
         class="mx-auto w-44 pt-4 pr-4 md:w-64 lg:w-72"
       />
       <ul
-        class="my-5 mx-auto flex w-56 items-center justify-center gap-4 text-xl"
+        class="my-5 mx-auto flex w-56 items-center justify-center gap-4 text-2xl"
       >
         <li><i class="bx bxl-linkedin"></i></li>
         <li><i class="bx bxl-instagram"></i></li>
@@ -912,23 +996,26 @@
       <h3>© 2022 Work Labs Pte. Ltd.</h3>
     </div>
     <div class="flex flex-wrap gap-x-4 text-xs lg:justify-between lg:text-lg">
-      <div><a href="">Terms</a></div>
-      <div><a href="">Code of Conduct</a></div>
-      <div><a href="">Network Standards</a></div>
-      <div><a href="">Purchaser Terms</a></div>
-      <div><a href="">Referral Terms</a></div>
-      <div><a href="">Privacy Policy</a></div>
-      <div><a href="">Cookie Policy</a></div>
+      <div><a class="text-neutral-700" href="">Terms</a></div>
+      <div>
+        <a class="text-neutral-700" href="">Code of Conduct</a>
+      </div>
+      <div>
+        <a class="text-neutral-700" href="">Network Standards</a>
+      </div>
+      <div>
+        <a class="text-neutral-700" href="">Purchaser Terms</a>
+      </div>
+      <div>
+        <a class="text-neutral-700" href="">Referral Terms</a>
+      </div>
+      <div>
+        <a class="text-neutral-700" href="">Privacy Policy</a>
+      </div>
+      <div>
+        <a class="text-neutral-700" href="">Cookie Policy</a>
+      </div>
     </div>
     <hr class="mt-5 lg:hidden" />
   </div>
 </footer>
-<!--
-  1. Footer pakai grid col 1 (mobile) grid col 4 (lg)
-  2. GAP untuk misahin antar colom (done)
-  3. translate untuk asset (done)
-  4. divider absolute
-  5. Swiper JS Navigation
- -->
-
-<!-- Laporan magang + sidang magang + logbook magang(per minggu) -->
