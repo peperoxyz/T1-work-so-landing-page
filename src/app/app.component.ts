@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { SwiperOptions } from 'swiper';
+// import Swiper core and required modules
+import SwiperCore, { Navigation } from 'swiper';
+
+// install Swiper modules
+SwiperCore.use([Navigation]);
 
 @Component({
   selector: 'app-root',
@@ -16,7 +21,7 @@ export class AppComponent {
   };
 
   config: SwiperOptions = {
-    navigation: false,
+    navigation: true,
     spaceBetween: 10,
     breakpoints: {
       640: {

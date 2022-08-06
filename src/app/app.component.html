@@ -369,9 +369,6 @@
             </div>
           </div></ng-template
         >
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </swiper>
     </div>
   </section>
@@ -387,7 +384,8 @@
     </h2>
 
     <!-- Try better swiper -->
-    <swiper [config]="config_testi" class="mySwiper">
+    <swiper [config]="config_testi" class="mySwiper relative">
+      <div class="absolute rounded-full outline-black outline-4"></div>
       <ng-template swiperSlide>
         <div
           class="container text-center md:space-y-6 mt-10 max-w-lg md:max-w-3xl lg:max-w-5xl mx-auto pb-5 relative"
